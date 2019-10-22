@@ -10,7 +10,8 @@ import {
 import {
   BrightcovePlayer,
   BrightcovePlayerPoster,
-  BrightcovePlayerUtil
+  BrightcovePlayerUtil,
+  RNButtonComponent
 } from 'react-native-brightcove-player';
 
 const ACCOUNT_ID = '5434391461001';
@@ -103,6 +104,7 @@ export default class App extends Component {
           autoPlay
           {...this.state.playback}
         />
+        <RNButtonComponent />
         <FlatList
           style={styles.list}
           extraData={this.state.offlineVideos}
@@ -220,5 +222,11 @@ const styles = StyleSheet.create({
     padding: 16,
     marginLeft: 'auto',
     alignSelf: 'center'
+  },
+  castButton: {
+    position: 'absolute',
+    zIndex: 9999,
+    top: 10,
+    right: 10,
   }
 });
