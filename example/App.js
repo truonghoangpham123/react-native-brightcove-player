@@ -11,7 +11,7 @@ import {
   BrightcovePlayer,
   BrightcovePlayerPoster,
   BrightcovePlayerUtil,
-  RNButtonComponent
+  BrightcoveCastButtonComponent
 } from 'react-native-brightcove-player';
 
 const ACCOUNT_ID = '5434391461001';
@@ -104,7 +104,7 @@ export default class App extends Component {
           autoPlay
           {...this.state.playback}
         />
-        <RNButtonComponent />
+        <BrightcoveCastButtonComponent />
         <FlatList
           style={styles.list}
           extraData={this.state.offlineVideos}

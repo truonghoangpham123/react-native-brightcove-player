@@ -1,8 +1,8 @@
 import { requireNativeComponent, View } from 'react-native';
 import React, { Component } from 'react';
 
-const RNButton = requireNativeComponent('RNButton');
-class RNButtonComponent extends Component {
+const BrightcoveCastButton = requireNativeComponent('BrightcoveCastButton');
+class BrightcoveCastButtonComponent extends Component {
     constructor(props) {
         super(props);
     }
@@ -14,7 +14,7 @@ class RNButtonComponent extends Component {
     render() {
         return(
             <View>
-            <RNButton 
+            <BrightcoveCastButton 
             style={{
                 zIndex: 9999,
                 top: 0,
@@ -27,4 +27,4 @@ class RNButtonComponent extends Component {
     }
 }
 
-module.exports = RNButtonComponent;
+module.exports = BrightcoveCastButtonComponent;
